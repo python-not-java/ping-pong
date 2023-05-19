@@ -26,16 +26,16 @@ class GameSprite():
     def update_l(self):
         keys = pygame.key.get_pressed()
         if e.type == pygame.KEYDOWN:
-            if keys[pygame.K_a] and self.rect.y > 5:
+            if keys[pygame.K_a]:
                 self.rect.y += 5
-            if keys[pygame.K_d] and self.rect.y < 5:
+            if keys[pygame.K_d]:
                 self.rect.y -= 5
     def update_r(self):
         keys = pygame.key.get_pressed()
         if e.type == pygame.KEYDOWN:
-            if keys[pygame.K_LEFT] and self.rect.y > 5:
+            if keys[pygame.K_LEFT]:
                 self.rect.y += 5
-            if keys[pygame.K_RIGHT] and self.rect.y < 5:
+            if keys[pygame.K_RIGHT]:
                 self.rect.y -= 5
     def colliderect(self, rect):
         return self.rect.colliderect(rect)
